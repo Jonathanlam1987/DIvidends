@@ -44,34 +44,25 @@
  
 
     <div class="bg-img">
-      <form class="container">
+      <form class="container-signup">
         <h1>Login</h1>
     
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
+        <form action="submit" method="POST">
+            <section>
+                <label for="text"><b>Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+             
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required minlength="6" maxlength="12">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required minlength="6" maxlength="12">
+            </section>
         <button type="submit" class="btn">Login</button>
       </form>
     </div>
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

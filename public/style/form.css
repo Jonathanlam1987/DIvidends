@@ -1,0 +1,60 @@
+
+
+/* form */
+
+  
+  * {
+    box-sizing: border-box;
+  }  
+  .bg-img {
+    background-image: url("pool.jpg");
+    min-height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: rgb(241, 235, 235);
+    opacity: 70%;
+    border-radius: 20px;
+  }
+  .container-signup {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    margin: 20px;
+    max-width: 400px;
+    padding: 16px;
+    background-color: rgb(241, 235, 235);
+    opacity: 70%;
+    border-radius: 20px;
+  }
+     input[type=text], input[type=email] ,input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #2d3b2e;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  

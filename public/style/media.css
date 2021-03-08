@@ -1,0 +1,16 @@
+
+/* media */
+
+@media screen and (max-width: 500px){
+    .signup{
+        width: 400px;
+        height: 500px;
+    }
+    form{
+        margin-left: 20%;
+    }    
+}
+@media screen and (min-width: 600px){
+
+}
+

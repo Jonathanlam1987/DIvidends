@@ -17,12 +17,16 @@
   "bugs": {
     "url": "https://github.com/Jonathanlam1987/DIvidends/issues"
   },
-  "homepage": "https://github.com/Jonathanlam1987/DIvidends#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
+    "cuid": "^2.1.8",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
-    "hbs": "^4.1.1"
+    "hbs": "^4.1.1",
+    "mongoose": "^5.11.19",
+    "validator": "^13.5.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

@@ -3,6 +3,7 @@ const expressHandlebars = require('express-handlebars');
 const app = express();
 const bodyParser = require('body-parser');
 
+const  {} =require('./db.js');
 
 // configure express to use handlebars
 app.engine(

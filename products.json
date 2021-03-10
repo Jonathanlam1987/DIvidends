@@ -1,55 +1,49 @@
-{
-"items": [
+[
     {
-    "id": 1,
     "name": "Pigeon Hole",
     "price": "$$$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/pigeon.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "American"
     },
     {
-    "id": 2,
     "name": "Foreign Concept",
-    "price": "$$",
+    "price": "$$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/foreign.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "Asian"
     },
     {
-    "id": 3,
     "name": "Starbucks",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/starbucks.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "Coffee"
     },
     {
-    "id": 4,
     "name": "10 Foot Henry",
     "price": "$$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/10.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "Vegeterian"
     },
     {
-    "id": 5,
-    "price": "$$$$",
+    "name": "Sweet Relief",  
+    "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/sweet.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "Bakery"
     },
     {
-    "id": 6,
     "name": "Awesome Kitchen",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/awesome.jpg",
     "neighborhood": "Victoria Park",
     "cuisine": "Pizza"
     },
@@ -60,47 +54,42 @@
 
 
     {
-    "id": 7,
     "name": "Nupo",
     "price": "$$$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/nupo.jpg",
     "neighborhood": "East Village",
     "cuisine": "Asian"
     },
     {
-    "id": 8,
     "name": "Phils & Sebastian",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/phils.jpg",
     "neighborhood": "East Village",
     "cuisine": "Coffee"
     },
     {
-    "id": 9,
     "name": "King Eddy",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/kingeddy.jpg",
     "neighborhood": "East Village",
     "cuisine": "American"
     },
     {
-    "id": 10,
     "name": "Bookers",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/bookers.jpg",
     "neighborhood": "East Village",
     "cuisine": "American"
     },
     {
-    "id": 11,
     "name": "Mari Bakeshop",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/mari.jpg",
     "neighborhood": "East Village",
     "cuisine": "Bakery"
     },
@@ -111,84 +100,75 @@
 
 
     {
-    "id": 12,
     "name": "Alumni",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/alumni.jpg",
     "neighborhood": "East Village",
     "cuisine": "American"
     },
     {
-    "id": 13,
     "name": "The Coup",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/coup.jpg",
     "neighborhood": "East Village",
     "cuisine": "Vegeterian"
     },
     {
-    "id": 14,
     "name": "UNA",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/una.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Pizza"
     },
     {
-    "id": 15,
     "name": "Cafe Beano",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/beano.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Coffee"
     },
     {
-    "id": 16,
     "name": "Pho",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/pho.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Asian"
     },
     {
-    "id": 17,
     "name": "Damascus",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/damascus.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Middle Eastern"
     },
     {
-    "id": 18,
     "name": "Nami",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/nami.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Asian"
     },
     {
-    "id": 19,
     "name": "National",
     "price": "$$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/national.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "American"
     },
     {
-    "id": 20,
     "name": "Butter Block",
     "price": "$",
     "city": "Calgary",
-    "imageURL": "",
+    "imageURL": "images/butter.jpg",
     "neighborhood": "17th Ave SW",
     "cuisine": "Bakery"
     }
-]}
+]

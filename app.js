@@ -1,9 +1,13 @@
+require('dotenv').config();
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const app = express();
 const bodyParser = require('body-parser');
 
-const  {} =require('./db.js');
+
+const product = require('./models/product.js');
+const user = require('./models/user.js');
+
 
 // configure express to use handlebars
 app.engine(

@@ -1,1 +1,1 @@
-const { create } = require('../models.items.js');
+const { create } = require('../models.product.js');

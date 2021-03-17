@@ -1,0 +1,25 @@
+
+  .main-btn {
+    background-color: #19301b;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    font-size: small;
+    border-radius: 10px;
+    opacity: 80%;
+  }
+  
+   /* Set a style for the submit button  in login and signup handlebar*/
+ .btn {
+    background-color: #19301b;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: larger;
+    border-radius: 10px;
+  }
+  

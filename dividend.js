@@ -2,15 +2,15 @@
 
 
 
-let drop = document.getElementById("menu");
+// let drop = document.getElementById("menu");
 
 
 
-function dropDown() {
+// function dropDown() {
 
-    if (drop.style.display === "block") {
-      drop.style.display = "none";
-    } else {
-      drop.style.display = "block";
-    }
-  }
+//     if (drop.style.display === "block") {
+//       drop.style.display = "none";
+//     } else {
+//       drop.style.display = "block";
+//     }
+//   }

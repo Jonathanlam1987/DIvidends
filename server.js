@@ -4,7 +4,7 @@ const expressHandlebars = require('express-handlebars');
 const cookieParser = require('cookie-parser');
 
 const { authenticateUser } = require('./middleware/authMiddleware.js');
-
+const { renderProductsList } = require("./controllers/productController.js");
 
 
 // const auth = require('./utils/auth.js');
@@ -12,11 +12,9 @@ const { authenticateUser } = require('./middleware/authMiddleware.js');
 // const user = require('./models/user.js');
 
 
+
 const {
-  renderSignupForm,
-  processSignupSubmission,
-  renderLoginForm,
-  processLoginSubmission
+  renderSignupForm, processSignupSubmission,renderLoginForm,processLoginSubmission
 } = require('./controllers/userControllers');
 const { get } = require('mongoose');
 
@@ -32,8 +30,6 @@ app.engine('handlebars', expressHandlebars({
         layoutsDir: __dirname + '/views/layouts',
         partialsDir: __dirname + '/views/partials',
 }));
-
-
 
 app.get('/', (req, res) => {
     res.render('main');
@@ -51,32 +47,36 @@ app.use(cookieParser());
 
 
 // ROUTING
+app.get("/", renderProductsList);
+
 app.get('/', function (req, res) {
   res.render('home');
 });
 
-    // // renders signup page
-    app.get('/signup', (req, res) => {
-      res.render('signup');
-    })
+
+ 
     app.get('/signup', renderSignupForm);
     app.get('/signup', processSignupSubmission);
-    // // renders login page 
-    app.get('/login', (req, res) => {
-      res.render('login');
-    })
-    // //  renders Alternative page 
-    // app.get('/alternative', (req, res) => {
-    //   res.render('./layout/alternative');
-    // }) 
 
+    app.get("/login", renderLoginForm);
+    app.post("/login", processLoginSubmission);
+
+
+    // //  renders Alternative page 
+    // app.get("/cart", authenticateUser, renderUserCart);
+    // app.post("/cart", authenticateUser, addItemToCart);
 
 
 // ERROR HANDLING MIDDLEWARE
-app.use((err, req, res, next) => {
-  res.status(500).json({ error: err});
-})
+// app.use((req, res, next) => {
+//   console.log(err);
+//   res.status(404).render("error", { error: err });
+// });
 
+// app.use((err, req, res, next) => {
+//   console.log(err);
+//   res.status(500).render("error", { error: err });
+// });
 
 // start the server
 app.listen(3500, () => {

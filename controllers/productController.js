@@ -8,7 +8,7 @@ async function renderProductsList(req, res) {
     ? items.filter((item) => item.category === req.query.category)
     : items;
 
-    res.render('home', { items: itemsToDisplay, productCategories });
+    res.render('main', { items: itemsToDisplay, productCategories });
 }
 
 module.exports = {

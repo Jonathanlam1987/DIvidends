@@ -1,4 +1,4 @@
-const { verify } = require("jsonwebtoken");
+const { verify } = require("../utils/auth.js");
 
 
 

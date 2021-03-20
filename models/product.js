@@ -1,19 +1,9 @@
 
-
-const mongoose = require("mongoose");
 const cuid = require('cuid');
 const db = require('../db.js');
-const Schema = mongoose.Schema;
+const itemCuisine = requires('../data/productCategories.js');
+// const Schema = mongoose.Schema;
 
-
-const itemCuisine = [
-    'asian',
-    'coffee',
-    'pizza',
-    'american',
-    'bakery',
-    'vegeterian',
-];
 
 const ProductSchema = new Schema({
 _id: { type: String, default: cuid },
@@ -31,19 +21,8 @@ cuisine: {
 
 const Product = mongoose.model("Product", ProductSchema);
 
-function create(fields) {
-  return new Product(fields).save();
-}
-
-function list() {
-  return Product.find().setOptions({ lean: true }).exec();
-}
-
 module.exports = {
-    itemCuisine,
-    create,
-    list,
-
+    Product
 };
 
 

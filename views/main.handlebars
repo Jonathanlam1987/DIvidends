@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/c9cd230c37.js" crossorigin="anonymous"></script>
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/app.css">
-    <title>Divvy</title>
-   
-       
-</head>
-
-  <div class="nav">
-      <a href="#home" class="active"> </a>
-      <div id="menu">
-        <a href="#">Sign up</a>
-        <a href="#">Log In</a>
-        <a href="#">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="dropDown()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    
-    <div style="padding-left:16px">
-    </div>
-
-
-
-  </div>
-</header>
-  <body>
-   
       <form class="container-1">
-  <h1>DIVVY</h1> hello my name is jonathan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, molestiae quae iusto neque aperiam cumque error aliquam! Id repellat minima suscipit. Vero ipsa fugiat, omnis molestias libero ullam natus nihil?<br><br>
+  <p>Welcome to,<h1>DIVVY</h1></p> hello my name is jonathan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, molestiae quae iusto neque aperiam cumque error aliquam! Id repellat minima suscipit. Vero ipsa fugiat, omnis molestias libero ullam natus nihil?<br><br>
   <button type="submit" class="main-btn">Sign-up</button>
 
       </form>
@@ -64,17 +25,46 @@
 
             <form class="container-3">
 
-  <h3>Trending</h3> my name is jonathan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, molestiae quae iusto neque aperiam cumque error aliquam! Id repellat minima suscipit. Vero ipsa fugiat, omnis molestias libero ullam natus nihil?
+                <h3>Trending</h3> 
+                  <nav class="side-menu">
+                    <ul class="nav-links">
+                        <li>
+                          <a href="/"><button>Una</button></a>
+                        </li>
+                        <li>
+                          <a href="'/"><button>Nopu</button></a>
+                        </li>       
+                        <li>
+                          <a href="'/"><button>Foreign Concept</button></a>
+                        </li> 
+                        <li>
+                          <a href="'/"><button>Mari Bakeshop</button></a>
+                        </li> 
 
-   hello my name is jonathan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, molestiae quae iusto neque aperiam cumque error aliquam! Id repellat minima suscipit. Vero ipsa fugiat, omnis molestias libero ullam natus nihil?
+                    </ul>
+                  </nav>
+
+            <section class="content">
+              <p>Hi {{{username}}}, take a look around </p>
+              <ul class="items">
+                {{#each items}}
+                  <li>
+                    <img src={{imageUrl}} alt="" height="50px" width="50px" />
+                    <h2>{{name}}</h2>
+                    <span>{{price}}</span>
+                    <p>{{description}}</p>
+                    <button id={{_id}}>go to form</button>
+                  </li>
+                  {{/each}}
+              </ul>
+            </section>
+
       </form>
       <form class="container-ad">
         <a href="airbnb.com">
         <img class="ad" src="/images/airbnb2.png" alt="Ad-airbnb" width="600px" height="180px" style="vertical-align:bottom">
         </a>
-      </form>
+      </form> 
 
-</body>
-
-<script src="dividend.js"></script>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/script.js"></script>

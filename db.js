@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-const cuid = require('cuid');
+// const Schema = mongoose.Schema;
+
 const connection = mongoose.createConnection(process.env.CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true 
@@ -13,5 +13,4 @@ db.once("open", () => {
 
 module.exports = {
   mongoose,
-  db,
 }

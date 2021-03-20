@@ -1,12 +1,12 @@
 
 
 const db = require('../db.js')
-const { create } = require('../models/products.js');
+const { createProduct } = require('../services/products.js');
 const products = require('../products.json');
 
 (async function () {
 for (products of products) {
-    await create(products);
+    await createProduct(products);
    }
    db.disconnect();
 })();

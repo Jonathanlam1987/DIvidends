@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-
 const jwtSecret = process.env.JWT_SECRET;
 const jwtOptions = { algorithm: "HS256", expiresIn: "1d" };
 
@@ -19,7 +18,6 @@ async function authenticateUser(req, res, next) {
     err.statusCode = 401;
     return next(err);
   }
-
   req.username = name;
   next();
 }

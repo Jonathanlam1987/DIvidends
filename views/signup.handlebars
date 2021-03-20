@@ -34,9 +34,6 @@
 
 
 
-<!-- 
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i></button>  -->
   </div>
 </header>
 
@@ -47,8 +44,12 @@
       <form class="container-signup">
         <h1>Signup</h1>
     
-        <form action="submit" method="POST">
+        <form action="signup" method="POST">
             <section>
+              {{#if message}}
+              <p>{{message}}</p>
+              {{/if}}
+
                 <label for="text"><b>Name</b></label>
                 <input type="text" placeholder="Enter name" name="name" required>
              
@@ -57,10 +58,10 @@
             
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required minlength="6" maxlength="12">
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required minlength="6" maxlength="12">
+             
+
             </section>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn">Submit</button>
       </form>
     </div>
 
@@ -71,4 +72,5 @@
 
 
 <script src="index.js"></script>
-</html>
+</html> 
+

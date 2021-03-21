@@ -1,5 +1,5 @@
 const { listProducts } = require('../services/productService.js');
-const productCategories = require('../data/productCategories.js')
+const itemCuisine = require('../data/itemCuisine.js')
 
 async function renderProductsList(req, res) {
     const items = await listProducts();
@@ -8,7 +8,7 @@ async function renderProductsList(req, res) {
     ? items.filter((item) => item.category === req.query.category)
     : items;
 
-    res.render('main', { items: itemsToDisplay, productCategories });
+    res.render('home', { items: itemsToDisplay, itemCuisine });
 }
 
 module.exports = {

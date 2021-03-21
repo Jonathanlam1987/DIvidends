@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+{{> intro}}
+{{!-- {{> recent}} --}}
+{{> trending}}
+{{> ad}}
+
+
+
+<form class="container-2">
+    <h3>Recent</h3>
+        <container class="recent-1">
+            <hr>
+                <ul class="blogs-links">
+                    <li>
+                        <a href="/"><button>all</button></a>
+                    </li>
+                    {{#each itemCuisine}}
+                    <li>
+                         <a href="?category={{this}}"><button>{{this}}</button></a>
+                    </li>
+                    {{/each}}
+                </ul>
+         </container>
+            <hr>
+
+
+<section class="content">
+    <ul class="items">
+            
+        {{#each items}}
+        <li>
+            <img src={{imageUrl}} alt="" height="50px" width="50px" />
+            <h2>{{name}}</h2>
+            <span>{{price}}</span>
+            <p>{{neighorhood}}</p>
+            <button id={{_id}}>go to page</button>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+
+
+
+
+</form> 
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/script.js"></script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- 
+
+
+<nav class="side-menu">
+    <ul class="nav-links">
+        <li>
+            <a href="/"><button>All</button></a>
+        </li>
+        {{#each productCategories}}
+        <li>
+            <a href="?category={{this}}"><button>{{this}}</button></a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>
+
+<section class="content">
+    <ul class="items">
+        {{#each items}}
+        <li>
+            <img src={{imageUrl}} alt="" height="50px" width="50px" />
+            <h2>{{name}}</h2>
+            <span>${{price}}</span>
+            <p>{{description}}</p>
+            <button id={{_id}}>Add To Cart</button>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/script.js"></script> --}}

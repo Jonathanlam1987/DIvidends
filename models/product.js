@@ -1,7 +1,7 @@
 
 const cuid = require('cuid');
 const db = require('../db.js');
-const itemCuisine = require('../data/productCategories.js');
+const itemCuisine = require('../data/itemCuisine.js');
 
 
 const productSchema = db.Schema({

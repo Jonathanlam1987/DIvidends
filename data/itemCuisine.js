@@ -1,3 +1,19 @@
+
+const itemPrice = [
+  '$',
+  '$$',
+  '$$$',
+  '$$$$',
+  '$$$$$'
+];
+
+
+const itemCity = [
+  'Calgary',
+  'Vancouver'
+];
+
+
 const itemCuisine = [
   'asian',
   'coffee',
@@ -6,5 +22,13 @@ const itemCuisine = [
   'bakery',
   'vegeterian',
 ];
-  module.exports = itemCuisine;
+
+
+
+
+  module.exports = {
+        itemPrice,
+        itemCity,
+        itemCuisine
+  }
   

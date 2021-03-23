@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const cookieParser = require('cookie-parser');
-
+const bodyParser = require('body-parser');
 const { authenticateUser } = require('./middleware/authMiddleware.js');
 const { renderProductsList } = require("./controllers/productController.js");
 

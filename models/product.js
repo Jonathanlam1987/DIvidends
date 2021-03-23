@@ -1,14 +1,22 @@
 
 const cuid = require('cuid');
 const db = require('../db.js');
-const itemCuisine = require('../data/itemCuisine.js');
+const { itemPrice, itemCity, itemCuisine }  = require('../data/itemCuisine.js');
 
 
 const productSchema = db.Schema({
     _id: { type: String, default: cuid },
     name: String,
-    price: String,
-    description: String,
+    price: {
+      type: String,
+      index: true,
+      enum: itemPrice,
+    }, 
+    city: {
+      type: String,
+      index: true,
+      enum: itemCity,
+    },
     imageUrl: String,
     category: {
       type: String,

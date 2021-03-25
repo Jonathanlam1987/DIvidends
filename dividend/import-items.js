@@ -1,0 +1,1 @@
+const { create } = require('../models.product.js');

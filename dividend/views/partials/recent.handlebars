@@ -1,0 +1,66 @@
+
+
+
+<form class="container-2">
+    <h3>Recent</h3>
+        <container class="recent-1">
+            <hr>
+                <ul class="blogs-links">
+                    <li>
+                        {{#each itemCuisine}}
+                    </li>
+                        <a href="?category={{this}}"><button>{{this}}</button></a>
+                    <li>
+
+                    </li>
+
+                    <li>
+
+                    </li>
+                    {{/each}}
+                </ul>
+         </container>
+            <hr>
+</form> 
+
+
+<section class="content">
+    <ul class="items">
+        {{#each items}}
+        <li>
+            <img src={{imageUrl}} alt="" height="50px" width="50px" />
+            <h2>{{name}}</h2>
+            <span>${{price}}</span>
+            <p>{{description}}</p>
+            <button id={{_id}}>Add To Cart</button>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+    {{!-- <form class="container-2">
+        <h3>Recent</h3>
+        <container class="recent-1">
+        <hr>
+                
+                <p>Cafe GRAVITY <span class="sketch-highlight">Berlin, Germany</span></p>
+            <img src="/images/cafe.jpg" style="width: 700px; height: 300px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem sunt neque? Voluptate aspernatur voluptatem sit obcaecati ipsum ducimus soluta, delectus accusantium perferendis fugit fugiat, recusandae quis? Itaque, voluptatum sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime incidunt nulla corporis inventore qui. Numquam, facere aliquam, distinctio eaque architecto recusandae nihil magni laboriosam, eligendi magnam voluptatum quasi delectus. Consequatur?</p>
+                        </container>
+                        <hr>
+                                <container class="recent-2">
+            <p>kinsai<span class="sketch-highlight">Osaka, Japan</span> </p>
+            <img src="/images/shimo.jpg" 
+            style="width: 700px; height: 300px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem sunt neque? Voluptate aspernatur voluptatem sit obcaecati ipsum ducimus soluta, delectus accusantium perferendis fugit fugiat, recusandae quis? Itaque, voluptatum sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime incidunt nulla corporis inventore qui. Numquam, facere aliquam, distinctio eaque architecto recusandae nihil magni laboriosam, eligendi magnam voluptatum quasi delectus. Consequatur?</p>
+                        </container>
+                        <hr>
+                </form> --}}

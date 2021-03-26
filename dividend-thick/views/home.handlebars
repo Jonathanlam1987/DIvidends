@@ -1,64 +1,13 @@
 
 
-
-
 {{> intro}}
-{{!-- {{> recent}} --}}
+{{> recent}}
 {{> trending}}
 {{> ad}}
 
 
 
-<nav class="container-2">
-    <hr>
-        <li class="nav-links">
-            <a href="/"><button>all</button></a>
-        </li>
-
-
-
-            {{#each itemCuisine}}
-        <li>
-            
-            <a href="?category={{this}}"><button>{{this}}</button></a>
-            <a href="?city={{this}}"><button>{{this.city}}</button></a>
-            <a href="?price={{this}}"><button>{{this.price}} </button></a>
-        </li>
-            {{/each}}
-        </ul>
-    <hr>
-
-
-<section class="content">
-    <ul class="ul-items">
-            
-        {{#each items}}
-        
-        <li>
-            <img src={{ imageUrl }} alt="" height="100px" width="100px" />
-            <h5>{{ name }}   {{ price }}</h5>
-            <p><h5>{{ city }} - {{ neighborhood }}</h5></p>
-            <button id={{_id}}>go to page</button>
-            <hr>
-        </li>
-        {{/each}}
-    </ul>
-</section>
-
-
-</nav>
-
-
-</container>
-
-
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="scripts/script.js"></script> 
-
-
-
+<script src="scripts/script.js"></script>
+</html> 

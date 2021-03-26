@@ -2,8 +2,8 @@ let items = [];
 
 function generateListItem(item) {
   const listItem = document.createElement("li");
-  const image = document.createElement("img");
-  image.src = item.image;
+  // const image = document.createElement("img");
+  // image.src = item.image;
   const name = document.createElement("h2");
   name.append(item.name);
   const paragraph = document.createElement("p");
@@ -24,7 +24,7 @@ function generateListItem(item) {
 }
 
 async function loadItems() {
-  const response = await axios.get("http://localhost:9000/items");
+  const response = await axios.get("http://localhost:3000/items");
   items = response.data;
   for (let item of items) {
     generateListItem(item);
@@ -32,7 +32,7 @@ async function loadItems() {
 }
 
 function loadItemsWithoutAwait() {
-  axios.get("http://localhost:9000/items").then((response) => {
+  axios.get("http://localhost:3000/items").then((response) => {
     const items = response.data;
     console.log(`Without await: ${items}`);
   });

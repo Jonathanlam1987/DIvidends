@@ -27,8 +27,8 @@ const itemCuisine = [
 
 
   module.exports = {
-        // itemPrice,
-        // itemCity,
+        itemPrice,
+        itemCity,
         itemCuisine
   }
   

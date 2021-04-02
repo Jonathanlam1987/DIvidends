@@ -1,13 +1,13 @@
 
 
-/* form */
+/* MAIN PAGE */
 
   
   * {
     box-sizing: border-box;
   }  
   .bg-img {
-    background-image: url("/images/pool.jpg");
+    background-image: url("/imgs/pool.jpg");
     min-height: 550px;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
   }
 
 
-
+/* SIGNUP */
 
   .container-signup {
     position: absolute;
@@ -95,3 +95,10 @@
     outline: none;
   }
  
+
+
+  /* BLOG */
+  .blog-container {
+    background-color: rgb(201, 180, 183);
+  
+  }

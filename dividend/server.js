@@ -4,7 +4,7 @@ const expressHandlebars = require('express-handlebars');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const { authenticateUser } = require('./middleware/authMiddleware.js');
-const { renderProductsList } = require("./controllers/productController.js");
+const { renderProductsList, renderBlog } = require("./controllers/productController.js");
 
 
 // const auth = require('./utils/auth.js');
@@ -39,13 +39,17 @@ app.use(cookieParser());
 
 // ROUTING
 app.get("/", renderProductsList);
-app.get("/city", renderProductsList);
+
 
 app.get('/signup', renderSignupForm);
 app.get('/signup', processSignupSubmission);
 
 app.get("/login", renderLoginForm);
 app.post("/login", processLoginSubmission);
+
+app.get('/blog', renderBlog)
+
+
 
 
 
@@ -63,7 +67,7 @@ app.post("/login", processLoginSubmission);
 // });
 
 // start the server
-app.listen(9000, () => {
-    console.log("Express started on port 9000");
+app.listen(8000, () => {
+    console.log("Express started on port 8000");
   });
   

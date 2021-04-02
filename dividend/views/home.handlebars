@@ -1,34 +1,32 @@
 
-
-
-
-
-
-
 {{> intro}}
 {{!-- {{> recent}} --}}
 {{> trending}}
 {{> ad}}
 
-
-
 <nav class="container-2">
     <hr>
         <li class="nav-links">
             <a href="/"><button>all</button></a>
-        </li>
+
+        <li>
+            <a href="/city"><button>City</button></a>
+        </li>   
+         <li>
+            <a href="/cuisine"><button>Cuisine</button></a>
+        </li>   
+         <li>
+            <a href="/price"><button>Price</button></a>
+        </li>   
 
 
-
+        {{!-- </li>
             {{#each itemCuisine}}
         <li>
-            
-            <a href="?category={{this}}"><button>{{this}}</button></a>
-            <a href="?city={{this}}"><button>{{this.city}}</button></a>
-            <a href="?price={{this}}"><button>{{this.price}} </button></a>
+            <a href="?cuisine={{this}}"><button>{{this}}</button></a>
         </li>
             {{/each}}
-        </ul>
+        </ul> --}}
     <hr>
 
 
@@ -38,10 +36,10 @@
         {{#each items}}
         
         <li>
-            <img src={{ imageUrl }} alt="" height="100px" width="100px" />
+            {{!-- <img src={{ imageUrl }} alt="" height="100px" width="100px" /> --}}
             <h5>{{ name }}   {{ price }}</h5>
             <p><h5>{{ city }} - {{ neighborhood }}</h5></p>
-            <button id={{_id}}>go to page</button>
+            <a href="/blog"><button id={{_id}}>go to page</button></a>
             <hr>
         </li>
         {{/each}}
@@ -50,13 +48,6 @@
 
 
 </nav>
-
-
-</container>
-
-
-
-
 
 
 
